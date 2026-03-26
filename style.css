@@ -130,8 +130,26 @@ a:hover {
     color: #cbd5e1;
 }
 
-.oculto {
-    display: none;
+   .oculto {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.detalhes,
+.roadmap {
+    transition: all 0.3s ease;
+}
+
+.detalhes:not(.oculto),
+.roadmap:not(.oculto) {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+    pointer-events: auto;
 }
 
 .card.ativo {
