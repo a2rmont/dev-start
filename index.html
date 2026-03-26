@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+           <meta charset= "UTF-8">
+            <title>DESENVOLVENDO COM A ANNA</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="card">
+                <h1>PROGRAMANDO...</h1>
+            <p id="mensagem">Futura desenvolvedora front-end</p>
+             <button>Vamos conversar?</button>
+             <button onclick="mudarTexto()">Vem comigo!</button>
+             <a href="https://www.linkedin.com/in/annaracheltech/" target="_blank">
+    <button>Ver meu LinkedIn</button>
+</a>
+
+
+<script>
+let ativo = false;
+
+function mudarTexto() {
+    if (ativo === false) {
+        document.getElementById("mensagem").innerText = "Você clicou no botão!";
+        ativo = true;
+    } else {
+        document.getElementById("mensagem").innerText = "Futura desenvolvedora front-end";
+        ativo = false;
+    }
+    
+}
+
+
+</script>
+
+            </div>
+        
+        </body>
+
+
+    </html>
