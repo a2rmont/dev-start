@@ -1,21 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <html lang="pt-BR">
-   <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-
     <title>Anna Rachel Monteiro | Portfólio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <span class="tag">Front-end Developer in Progress</span>
+    <div class="card" id="card">
+        <span class="tag" id="statusTag">Front-end Developer in Progress</span>
 
         <h1>Anna Rachel Monteiro</h1>
+
         <p id="mensagem">Desenvolvedora front-end em formação</p>
 
-        <button onclick="mudarTexto()">Ver interação</button>
+        <p class="sobre">
+            Estudante de Análise e Desenvolvimento de Sistemas, focada em desenvolvimento front-end e buscando minha primeira oportunidade como desenvolvedora.
+        </p>
+
+        <div class="techs" id="techs">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <button onclick="mudarTexto()" id="botaoInteracao">Ver interação</button>
+
+        <div class="detalhes oculto" id="detalhes">
+            <p><strong>Objetivo:</strong> conquistar minha primeira oportunidade como desenvolvedora Jr.</p>
+            <p><strong>Foco atual:</strong> front-end com base sólida em HTML, CSS e JavaScript.</p>
+            <p><strong>Disponibilidade:</strong> dedicação diária aos estudos e construção de portfólio.</p>
+        </div>
+
+        <div class="roadmap">
+    <h2>Próximos passos</h2>
+    <ul>
+        <li>Construir novos projetos com JavaScript</li>
+        <li>Aprofundar responsividade e boas práticas de UI</li>
+        <li>Buscar minha primeira oportunidade como dev Jr</li>
+    </ul>
+</div>
+
+<div class="roadmap oculto" id="roadmap">
+    <h2>Próximos passos</h2>
+    <ul>
+        <li>Construir novos projetos com JavaScript</li>
+        <li>Aprofundar responsividade e boas práticas de UI</li>
+        <li>Buscar minha primeira oportunidade como dev Jr</li>
+    </ul>
+</div>
 
         <a href="https://www.linkedin.com/in/annaracheltech/" target="_blank" rel="noopener noreferrer">
             Ver meu LinkedIn

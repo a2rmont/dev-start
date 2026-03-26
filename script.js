@@ -2,29 +2,48 @@ let ativo = false;
 let contador = 0;
 
 function mudarTexto() {
-
     const mensagem = document.getElementById("mensagem");
     const contadorTexto = document.getElementById("contador");
+    const card = document.getElementById("card");
+    const detalhes = document.getElementById("detalhes");
+    const roadmap = document.getElementById("roadmap");
+    const botao = document.getElementById("botaoInteracao");
+    const statusTag = document.getElementById("statusTag");
+    const techs = document.querySelectorAll(".techs span");
 
-    // contador
     contador++;
 
-    let textoClique;
-
     if (contador === 1) {
-        textoClique = "Você clicou 1 vez";
+        contadorTexto.innerText = "Você clicou 1 vez";
     } else {
-        textoClique = "Você clicou " + contador + " vezes";
+        contadorTexto.innerText = "Você clicou " + contador + " vezes";
     }
 
-    contadorTexto.innerText = textoClique;
-
-    // toggle mensagem
     if (!ativo) {
-        mensagem.innerText = "Você clicou no botão!";
+        mensagem.innerText = "Portfólio ativado com interação real.";
+        botao.innerText = "Ocultar detalhes";
+        detalhes.classList.remove("oculto");
+        card.classList.add("ativo");
+        statusTag.classList.add("ativo");
+        statusTag.innerText = "Disponível para oportunidades";
+
+        techs.forEach(function(tech) {
+            tech.classList.add("ativo");
+        });
+
         ativo = true;
     } else {
-        mensagem.innerText = "Futura desenvolvedora front-end";
+        mensagem.innerText = "Desenvolvedora front-end em formação";
+        botao.innerText = "Ver interação";
+        detalhes.classList.add("oculto");
+        card.classList.remove("ativo");
+        statusTag.classList.remove("ativo");
+        statusTag.innerText = "Front-end Developer in Progress";
+
+        techs.forEach(function(tech) {
+            tech.classList.remove("ativo");
+        });
+
         ativo = false;
     }
 }
