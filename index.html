@@ -1,47 +1,29 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-           <meta charset= "UTF-8">
-            <title>DESENVOLVENDO COM A ANNA</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <div class="card">
-                <h1>PROGRAMANDO...</h1>
-            <p id="mensagem">Futura desenvolvedora front-end</p>
-             <button>Vamos conversar?</button>
-             <button onclick="mudarTexto()">Vem comigo!</button>
-             <a href="https://www.linkedin.com/in/annaracheltech/" target="_blank">
-    <button>Ver meu LinkedIn</button>
-    <p id="contador">Você clicou 0 vezes</p>
-</a>
+<html>
+    <html lang="pt-BR">
+   <head>
+    <meta charset="UTF-8">
 
+    <title>Anna Rachel Monteiro | Portfólio</title>
 
-<script>
-let ativo = false;
-let contador = 0;
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <span class="tag">Front-end Developer in Progress</span>
 
-function mudarTexto() {
+        <h1>Anna Rachel Monteiro</h1>
+        <p id="mensagem">Desenvolvedora front-end em formação</p>
 
-    contador = contador + 1;
-    document.getElementById("contador").innerText=
-    "Você clicou " + contador + " vezes";
-    if (ativo === false) {
-        document.getElementById("mensagem").innerText = "Você clicou no botão!";
-        ativo = true;
-    } else {
-        document.getElementById("mensagem").innerText = "Futura desenvolvedora front-end";
-        ativo = false;
-    }
-    
-}
+        <button onclick="mudarTexto()">Ver interação</button>
 
+        <a href="https://www.linkedin.com/in/annaracheltech/" target="_blank" rel="noopener noreferrer">
+            Ver meu LinkedIn
+        </a>
 
-</script>
+        <p id="contador">Você clicou 0 vezes</p>
+    </div>
 
-            </div>
-        
-        </body>
-
-
-    </html>
+    <script src="script.js"></script>
+</body>
+</html>

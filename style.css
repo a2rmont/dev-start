@@ -1,35 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#0f172a, #1e293b);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin:0;
-
-    color: white;
-    text-align: center;
-    font-family: Arial, sans-serif;
+    padding: 24px;
+    color: #e2e8f0;
 }
 
 .card {
-    background-color: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    background-color:rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 20px;
+    padding: 32px 24 px;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba (0,0,0,0,3);
+    box-shadow: 0 20px 45 px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur (8px);
 }
 
+.tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 12px;
+    background-color: rgba(56, 189, 248, 0.12);
+    color: #38bdf8;
+    border: 1px solid rgba (56, 189, 248, 0.35);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+}
 h1 {
-    color: pink;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #f8fafc;
+}
+
+#mensagem {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    margin-bottom: 24px;
 }
 
 button {
-
-    background-color: pink;
-    color: black;
+    width: 100%;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 14px;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
 
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+a:hover {
+    background-color: rgba(56, 189, 248, 0.08);
+    color: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+#contador {
+    font-size: 15px;
+    color: #94a3b8;
+    margin-top: 8px;
 }
