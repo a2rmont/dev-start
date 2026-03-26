@@ -19,8 +19,13 @@
 
 <script>
 let ativo = false;
+let contador = 0;
 
 function mudarTexto() {
+
+    contador = contador + 1;
+    document.getElementById("contador").innerText=
+    "Você clicou " + contador + " vezes";
     if (ativo === false) {
         document.getElementById("mensagem").innerText = "Você clicou no botão!";
         ativo = true;
