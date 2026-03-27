@@ -24,6 +24,7 @@ function mudarTexto() {
         botao.innerText = "Ocultar detalhes";
         detalhes.classList.remove("oculto");
         card.classList.add("ativo");
+        roadmap.classList.remove("oculto");
         statusTag.classList.add("ativo");
         statusTag.innerText = "Disponível para oportunidades";
 
@@ -36,6 +37,7 @@ function mudarTexto() {
         mensagem.innerText = "Desenvolvedora front-end em formação";
         botao.innerText = "Ver interação";
         detalhes.classList.add("oculto");
+        roadmap.classList.add("oculto");
         card.classList.remove("ativo");
         statusTag.classList.remove("ativo");
         statusTag.innerText = "Front-end Developer in Progress";
