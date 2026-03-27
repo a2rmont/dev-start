@@ -1,23 +1,41 @@
-# 👩‍💻 Meu primeiro projeto - Landing Page
+# Portfólio Interativo - Anna Rachel Monteiro
 
-Projeto desenvolvido com HTML, CSS e JavaScript como parte da minha transição para a área de desenvolvimento.
+Projeto desenvolvido com HTML, CSS e JavaScript como parte da minha preparação para a primeira oportunidade como desenvolvedora front-end Jr, uma forma de mostrar minhas skills e as formas que busco para me aprimorar na área.
 
-## 🚀 Funcionalidades
-- Alteração dinâmica de texto com JavaScript
-- Botão interativo
-- Link para meu LinkedIn
-- Layout centralizado
+## Objetivo
+Criar uma página de apresentação profissional com interações reais de interface, mostrando evolução técnica em estruturação de HTML, estilização com CSS e lógica com JavaScript.
 
-## 🛠 Tecnologias
+## Funcionalidades
+- Alteração dinâmica de mensagem
+- Contador de cliques
+- Exibição condicional de detalhes e roadmap
+- Mudança visual de estado do card
+- Destaque visual das tecnologias
+- Link para LinkedIn
+- Publicação online com GitHub Pages
+
+## Tecnologias utilizadas
 - HTML
 - CSS
 - JavaScript
+- Git e GitHub
 
-## 📌 Objetivo
-Praticar lógica de programação e manipulação do DOM.
+## O que pratiquei neste projeto
+- Estruturação semântica de página
+- Manipulação do DOM
+- Controle de estado com JavaScript
+- Uso de classes dinâmicas
+- Organização de código em arquivos separados
+- Versionamento com Git
+- Deploy com GitHub Pages
 
-## 🔗 Acesse o projeto
-(em breve publicado online)
+## Próximos passos
+- Adicionar responsividade mais refinada
+- Criar novos projetos com JavaScript
+- Evoluir para componentes mais complexos de interface
 
-## 👩‍💻 Autora
-Anna Rachel
+## Link do projeto
+https://a2rmont.github.io/dev-start/
+
+## Autora
+Anna Rachel Monteiro
