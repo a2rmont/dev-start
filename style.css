@@ -75,6 +75,88 @@ h1 {
     border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
+.projetos {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.titulo-secao {
+    font-size: 15px;
+    color: #f8fafc;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.projeto-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.projeto-card h3 {
+    font-size: 16px;
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.projeto-descricao {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.projeto-techs {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.projeto-techs span {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #7dd3fc;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.projeto-links {
+    display: flex;
+    gap: 8px;
+}
+
+.projeto-links a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.projeto-links a:first-child {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.projeto-links a:first-child:hover {
+    opacity: 0.9;
+}
+
+.projeto-links a:last-child {
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.projeto-links a:last-child:hover {
+    background-color: rgba(56, 189, 248, 0.08);
+}
+
 button {
     width: 100%;
     background-color: #2563eb;
