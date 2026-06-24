@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
     background: #0f172a;
-    font-family: Arial, sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -98,20 +98,42 @@ button:active {
     transform: scale(0.98);
 }
 
-a {
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    color: #38bdf8;
-    border: 1px solid rgba(56, 189, 248, 0.35);
-    border-radius: 10px;
-    padding: 14px 18px;
-    font-weight: bold;
+.links {
+    display: flex;
+    gap: 10px;
     margin-bottom: 18px;
+}
+
+.links a {
+    flex: 1;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 14px 12px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
     transition: 0.2s;
 }
 
-a:hover {
+.link-principal {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: 1px solid #38bdf8;
+}
+
+.link-principal:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.link-secundario {
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    background-color: transparent;
+}
+
+.link-secundario:hover {
     background-color: rgba(56, 189, 248, 0.08);
 }
 
